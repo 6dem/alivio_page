@@ -1,0 +1,85 @@
+.about {
+    background-color: var(--color-white);
+    padding: 170px 0 56px 0;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__title {
+    position: relative;
+    max-width: 504px;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--color-green);
+}
+
+.about__title::before {
+    top: -30px;
+    left: 0;
+    position: absolute;
+    content: "How it works";
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-grey);
+}
+
+.about__description {
+    max-width: 670px;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-grey);
+}
+
+.about__cards {
+    margin: 80px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 20px;
+}
+
+.about__cards .card:nth-child(2) {
+    margin: 220px 0 0 0;
+}
+
+@media (max-width: 1250px) {
+    .about__content {
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about__description {
+        max-width: 504px;
+    }
+    .about__cards {
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .about__cards .card:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__title {
+        font-size: 40px;
+    }
+    .about__content {
+        padding: 0 15px;
+    }
+    .about__description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__cards {
+        margin: 0;
+    }
+}
