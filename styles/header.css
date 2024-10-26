@@ -45,11 +45,9 @@
     .header__nav-link {
         font-size: 16px;
     }
-
     .header__nav-list {
         column-gap: 2vw;
     }
-
     .header__actions .btn {
         width: 120px;
         font-size: 16px;
@@ -57,7 +55,16 @@
 }
 
 @media (max-width: 768px) {
+    .header__wrapper .logo {
+        margin: 0 0 0 50px;
+    }
     .header__nav {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__actions .btn {
+        width: 90px;
     }
 }
