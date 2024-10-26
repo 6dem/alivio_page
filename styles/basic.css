@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
@@ -61,6 +65,7 @@ p {
 .btn:hover,
 .btn:focus-visible {
     outline: 2px solid var(--color-green-dark);
+    cursor: pointer;
 }
 
 .btn--signin {
